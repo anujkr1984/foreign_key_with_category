@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @expense.title %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @expense.amount %>
+</p>
+
+<p>
+  <strong>catagory:</strong>
+  <%= @expense.category.name %>
+</p>
+
+Your reminder is for:
+<%= reminder.remind_at.strftime('%H:%m %p, %b %d, %Y') %>
+
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
